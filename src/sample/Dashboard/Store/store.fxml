@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<DialogPane minHeight="280.0" minWidth="539.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.Store.StoreController">
+   <content>
+      <AnchorPane prefHeight="280.0" prefWidth="539.0">
+         <children>
+            <AnchorPane id="achPaneTopBar" prefHeight="26.0" prefWidth="539.0" stylesheets="@../../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="13.0" layoutY="4.0" prefHeight="18.0" prefWidth="86.0" stylesheets="@../../Styles/font.css" text="Store" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_addStock" layoutX="38.0" layoutY="37.0" onMouseClicked="#openAddNewStock" prefHeight="234.0" prefWidth="206.0" stylesheets="@../../Styles/nodes.css">
+               <children>
+                  <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="56.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/addStock2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="189.0" prefHeight="18.0" prefWidth="99.0" style="-fx-alignment: center;" text="Add New Stock" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_stockAdjustment" layoutX="322.0" layoutY="37.0" onMouseClicked="#openStockAdjustment" prefHeight="234.0" prefWidth="206.0" stylesheets="@../../Styles/nodes.css">
+               <children>
+                  <ImageView fitHeight="111.0" fitWidth="106.0" layoutX="52.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/adjustStock2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="54.0" layoutY="189.0" prefHeight="18.0" prefWidth="99.0" style="-fx-alignment: center;" text="Stock Adjustment" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="lb_name" layoutX="274.0" layoutY="101.0" visible="false" />
+            <Label fx:id="lb_userNo" layoutX="260.0" layoutY="146.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>

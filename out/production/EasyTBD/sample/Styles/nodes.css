@@ -1,0 +1,90 @@
+@font-face {
+    src: url('font/Myriadpro.otf');
+
+}
+
+
+
+#textField{
+    -fx-label-padding: 0;
+    -fx-text-overrun: clip;
+
+    -fx-font-family: 'Myriadpro';
+
+    -fx-border-color: #00c0ff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+#searchField{
+    -fx-label-padding: 0;
+    -fx-text-overrun: clip;
+
+    -fx-font-family: 'Myriadpro';
+
+    -fx-border-color: #00c0ff;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+#achPane{
+    -fx-border-color: #00c0ff;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+#fieldRaw{
+    -fx-label-padding: 0;
+    -fx-text-overrun: clip;
+
+    -fx-font-family: 'Myriadpro';
+
+    -fx-border-color: #00c0ff;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+#label{
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+	-fx-font-family: "Myriadpro";
+
+}
+#label:hover{
+     -fx-border-color: #00c0ff;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+	-fx-font-family: "Myriadpro";
+}
+#label2{
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill:  #baeeff;
+	-fx-font-family: "Myriadpro";
+
+}
+#label2:hover{
+     -fx-border-color: #00c0ff;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill:  #baeeff;
+	-fx-font-family: "Myriadpro";
+}
+#labelOdd{
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+	-fx-font-family: "Myriadpro";
+
+}
+#labelOdd:hover{
+     -fx-border-color: #db0ef1;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+	-fx-font-family: "Myriadpro";
+}

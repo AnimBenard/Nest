@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.LoadReport.LoadReportController">
+   <children>
+      <AnchorPane id="achPaneTopBar" prefHeight="26.0" prefWidth="1366.0" stylesheets="@../../Styles/achStyle.css">
+         <children>
+            <Label id="ubuntu" layoutX="16.0" layoutY="4.0" prefHeight="18.0" prefWidth="82.0" stylesheets="@../../Styles/font.css" text="Report Loader" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

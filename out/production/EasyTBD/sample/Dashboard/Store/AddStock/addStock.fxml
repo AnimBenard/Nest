@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<DialogPane maxHeight="700.0" maxWidth="1209.0" minHeight="700.0" minWidth="1209.0" prefHeight="700.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.Store.AddStock.AddStockController">
+   <content>
+      <AnchorPane prefHeight="700.0" prefWidth="1209.0">
+         <children>
+            <AnchorPane id="achPaneTopBar" prefHeight="26.0" prefWidth="1209.0" stylesheets="@../../../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="13.0" layoutY="4.0" prefHeight="18.0" prefWidth="86.0" stylesheets="@../../../Styles/font.css" text="Add New Stock" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" layoutX="9.0" layoutY="37.0" prefHeight="180.0" prefWidth="1194.0" stylesheets="@../../../Styles/nodes.css">
+               <children>
+                  <Label layoutX="7.0" layoutY="17.0" prefHeight="18.0" prefWidth="90.0" text="Supplier Name" />
+                  <TextField id="textField" fx:id="tf_supplierName" layoutX="123.0" layoutY="13.0" prefHeight="26.0" prefWidth="286.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="7.0" layoutY="57.0" prefHeight="18.0" prefWidth="47.0" text="Item" />
+                  <ComboBox id="textField" fx:id="cb_item" editable="true" layoutX="123.0" layoutY="53.0" prefHeight="26.0" prefWidth="286.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="441.0" layoutY="57.0" prefHeight="18.0" prefWidth="108.0" text="Pack Qty Received" />
+                  <TextField id="textField" fx:id="tf_packQtyReceived" layoutX="552.0" layoutY="53.0" prefHeight="26.0" prefWidth="108.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="720.0" layoutY="57.0" prefHeight="18.0" prefWidth="71.0" text="Qty in a Pack" />
+                  <TextField id="textField" fx:id="tf_qtyInPack" layoutX="803.0" layoutY="53.0" prefHeight="26.0" prefWidth="90.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="920.0" layoutY="58.0" prefHeight="18.0" prefWidth="79.0" text="Total Unit Qty" />
+                  <TextField id="textField" fx:id="tf_totalUnitQty" layoutX="1018.0" layoutY="54.0" prefHeight="27.0" prefWidth="158.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="8.0" layoutY="98.0" prefHeight="18.0" prefWidth="71.0" text="Batch No." />
+                  <TextField id="textField" fx:id="tf_batchNo" layoutX="123.0" layoutY="93.0" prefHeight="26.0" prefWidth="286.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="440.0" layoutY="98.0" prefHeight="18.0" prefWidth="90.0" text="Unit Pack Price" />
+                  <TextField id="textField" fx:id="tf_packPrice" layoutX="551.0" layoutY="94.0" prefHeight="26.0" prefWidth="108.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="677.0" layoutY="98.0" prefHeight="18.0" prefWidth="120.0" text="Unit Item Price (GHC)" />
+                  <TextField id="textField" fx:id="tf_unitPrice" layoutX="803.0" layoutY="94.0" prefHeight="26.0" prefWidth="90.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="920.0" layoutY="98.0" prefHeight="18.0" prefWidth="79.0" text="Amount (GHC)" />
+                  <TextField id="textField" fx:id="tf_amount" layoutX="1018.0" layoutY="94.0" prefHeight="27.0" prefWidth="158.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="8.0" layoutY="141.0" prefHeight="18.0" prefWidth="97.0" text="Production Date" />
+                  <DatePicker id="textField" fx:id="dp_prodDate" layoutX="122.0" layoutY="137.0" prefHeight="26.0" prefWidth="286.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="441.0" layoutY="141.0" prefHeight="18.0" prefWidth="66.0" text="Expiry Date" />
+                  <DatePicker id="textField" fx:id="dp_expiryDate" layoutX="551.0" layoutY="137.0" prefHeight="26.0" prefWidth="341.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="441.0" layoutY="17.0" prefHeight="18.0" prefWidth="66.0" text="Telephone" />
+                  <TextField id="textField" fx:id="tf_telephone" layoutX="552.0" layoutY="13.0" prefHeight="26.0" prefWidth="342.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label layoutX="920.0" layoutY="19.0" prefHeight="18.0" prefWidth="86.0" text="Minimum Stock" />
+                  <TextField id="textField" fx:id="tf_minStock" layoutX="1018.0" layoutY="16.0" prefHeight="27.0" prefWidth="157.0" stylesheets="@../../../Styles/nodes.css" />
+                  <Label fx:id="lb_requestId" layoutX="516.0" layoutY="119.0" visible="false" />
+               </children>
+            </AnchorPane>
+            <Button id="ash" fx:id="btn_createRequest" layoutX="1009.0" layoutY="236.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="187.0" stylesheets="@../../../Styles/buttonStyleSheet.css" text="Add Stock" />
+            <AnchorPane id="achPane" layoutX="7.0" layoutY="275.0" prefHeight="415.0" prefWidth="1194.0" stylesheets="@../../../Styles/nodes.css">
+               <children>
+                  <TableView fx:id="tv_consumableStock" layoutX="6.0" layoutY="42.0" prefHeight="368.0" prefWidth="1179.0">
+                     <columns>
+                        <TableColumn fx:id="tc_supplierName" maxWidth="500.0" prefWidth="200.0" text="Supplier Name" />
+                        <TableColumn fx:id="tc_supplierTel" maxWidth="500.0" prefWidth="128.00001525878906" style="-fx-alignment: center;" text="Supplier Tel" />
+                        <TableColumn fx:id="tc_item" maxWidth="500.0" prefWidth="164.79998779296875" style="-fx-alignment: center;" text="Item" />
+                        <TableColumn fx:id="tc_packQtyReceived" maxWidth="500.0" prefWidth="153.60003662109375" style="-fx-alignment: center;" text="Pack Qty Received" />
+                        <TableColumn fx:id="tc_qtyInPack" maxWidth="500.0" prefWidth="123.199951171875" style="-fx-alignment: center;" text="Qty in Pack" />
+                        <TableColumn fx:id="tc_totalUnitQty" maxWidth="500.0" prefWidth="105.5999755859375" style="-fx-alignment: center;" text="Total Unit Qty" />
+                        <TableColumn fx:id="tc_minStock" maxWidth="500.0" prefWidth="132.800048828125" style="-fx-alignment: center;" text="Minimum Stock" />
+                        <TableColumn fx:id="tc_qtyLeft" maxWidth="500.0" prefWidth="105.5999755859375" style="-fx-alignment: center;" text="Qty Left" />
+                        <TableColumn fx:id="tc_batchNo" maxWidth="500.0" prefWidth="132.800048828125" style="-fx-alignment: center;" text="Batch No." />
+                        <TableColumn fx:id="tc_unitPackPrice" maxWidth="500.0" prefWidth="100.0" style="-fx-alignment: center;" text="Unit Pack Price" />
+                        <TableColumn fx:id="tc_unitItemPrice" maxWidth="500.0" prefWidth="100.0" style="-fx-alignment: center;" text="Unit Item Price" />
+                        <TableColumn fx:id="tc_amount" maxWidth="500.0" prefWidth="100.0" style="-fx-alignment: center;" text="Amount (GHC)" />
+                        <TableColumn fx:id="tc_prodDate" maxWidth="500.0" prefWidth="100.0" style="-fx-alignment: center;" text="Production Date" />
+                        <TableColumn fx:id="tc_expDate" maxWidth="500.0" prefWidth="200.0" style="-fx-alignment: center;" text="Expiry Date" />
+                        <TableColumn fx:id="tc_time" maxWidth="500.0" prefWidth="150.0" style="-fx-alignment: center;" text="Time" />
+                        <TableColumn fx:id="tc_date" maxWidth="500.0" prefWidth="150.0" style="-fx-alignment: center;" text="Date" />
+                        <TableColumn fx:id="tc_user" maxWidth="500.0" prefWidth="150.0" text="User" />
+                     </columns>
+                  </TableView>
+                  <TextField id="searchField" fx:id="tf_search" layoutX="1000.0" layoutY="7.0" prefHeight="26.0" prefWidth="185.0" promptText="search" stylesheets="@../../../Styles/nodes.css" />
+                  <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="1158.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Vibrio/src/sample/Lab_files/dasboardImages/searchicon.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="label" fx:id="lb_remove" layoutX="914.0" layoutY="10.0" prefHeight="26.0" prefWidth="58.0" style="-fx-alignment: center;" stylesheets="@../../../Styles/nodes.css" text="Remove" />
+                  <Label fx:id="lb_removeError" layoutX="587.0" layoutY="11.0" prefHeight="18.0" prefWidth="248.0" style="-fx-alignment: center;" textFill="RED" />
+                  <Separator layoutX="981.0" layoutY="11.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="5.0" />
+                  <Label id="ubuntu" layoutX="14.0" layoutY="6.0" prefHeight="18.0" prefWidth="170.0" stylesheets="@../../../../../../Vibrio/src/sample/font.css" text="Stock Received List" />
+                  <Separator layoutX="14.0" layoutY="26.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="lb_ID" layoutX="402.0" layoutY="241.0" visible="false" />
+            <Label fx:id="lb_name" layoutX="445.0" layoutY="241.0" visible="false" />
+            <Label fx:id="lb_userNo" layoutX="336.0" layoutY="255.0" visible="false" />
+            <Label id="label" fx:id="lb_clearFields" layoutX="896.0" layoutY="236.0" onMouseClicked="#clearCSFields" prefHeight="26.0" prefWidth="90.0" style="-fx-alignment: center;" stylesheets="@../../../Styles/nodes.css" text="Clear Fields" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>

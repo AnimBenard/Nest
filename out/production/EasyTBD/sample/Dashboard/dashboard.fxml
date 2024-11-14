@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.DashboardController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="157.0" style="-fx-background-color: #002746;">
+         <children>
+            <Separator layoutY="52.0" opacity="0.15" prefWidth="157.0" />
+            <Label id="ubuntu" fx:id="lb_name" layoutX="6.0" layoutY="3.0" prefHeight="17.0" prefWidth="146.0" style="-fx-alignment: center;" stylesheets="@../Styles/font.css" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="label2" fx:id="lb_signIn" layoutX="20.0" layoutY="27.0" onMouseClicked="#openSetUserDialog" prefHeight="18.0" prefWidth="50.0" style="-fx-alignment: center;" stylesheets="@../Styles/nodes.css" text="Sign in" textFill="WHITE" />
+            <Label id="label2" fx:id="lb_signOut" layoutX="87.0" layoutY="27.0" onMouseClicked="#signOut" prefHeight="17.0" prefWidth="49.0" style="-fx-alignment: center;" stylesheets="@../Styles/nodes.css" text="Sign out" textFill="WHITE" />
+            <AnchorPane id="achPane" fx:id="ach_analytics" layoutY="92.0" onMouseClicked="#openAnalyticsScene" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Analytics" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="5.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/analytics.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_hub" layoutY="130.0" onMouseClicked="#openHub" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Hub" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="5.0" layoutY="8.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/hub.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_spokes" layoutY="168.0" onMouseClicked="#openSpokes" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Spokes" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="5.0" layoutY="8.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/spokes.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_results" layoutY="206.0" onMouseClicked="#openResults" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Results" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="5.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/results.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_reports" layoutY="246.0" onMouseClicked="#openReportScene" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Reports" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="5.0" layoutY="7.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/report.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_store" layoutY="286.0" onMouseClicked="#openStoreScene" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Store" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="5.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/store.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lb_userNo" layoutX="48.0" layoutY="650.0" visible="false" />
+            <AnchorPane id="achPane" fx:id="ach_users" layoutY="54.0" onMouseClicked="#openUserScene" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Users" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="5.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/staff.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="achPane" fx:id="ach_settings" layoutY="324.0" prefHeight="38.0" prefWidth="157.0" stylesheets="@../Styles/achStyle.css" visible="false">
+               <children>
+                  <Label id="ubuntu" layoutX="52.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" style="-fx-text-fill: #baeeff;" stylesheets="@../Styles/font.css" text="Settings" textFill="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="5.0" layoutY="9.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/settings.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="ach_paneLoader" layoutX="156.0" prefHeight="700.0" prefWidth="1209.0" style="-fx-background-color: #e6e6e6;" />
+   </children>
+</AnchorPane>

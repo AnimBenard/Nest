@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.Spokes.SpokesController">
+   <children>
+      <AnchorPane id="achPaneTopBarOdd" prefHeight="26.0" prefWidth="1209.0" stylesheets="@../../Styles/achStyle.css">
+         <children>
+            <Label id="ubuntu" layoutX="16.0" layoutY="4.0" prefHeight="18.0" prefWidth="162.0" stylesheets="@../../Styles/font.css" text="Test Register (Spokes)" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lb_name" layoutX="142.0" layoutY="62.0" visible="false" />
+      <Label fx:id="lb_userNo" layoutX="211.0" layoutY="71.0" visible="false" />
+      <AnchorPane id="achPane" layoutX="8.0" layoutY="36.0" prefHeight="350.0" prefWidth="798.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <TextField id="textField" fx:id="tf_surname" layoutX="132.0" layoutY="14.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <TextField id="textField" fx:id="tf_othernames" layoutX="534.0" layoutY="12.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="417.0" layoutY="18.0" prefHeight="18.0" prefWidth="74.0" stylesheets="@../../Styles/font.css" text="Othernames" />
+            <TextField id="textField" fx:id="tf_age" layoutX="132.0" layoutY="59.0" prefHeight="27.0" prefWidth="74.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="63.0" prefHeight="18.0" prefWidth="62.0" stylesheets="@../../Styles/font.css" text="Age (years)" />
+            <Label id="ubuntu" layoutX="253.0" layoutY="63.0" prefHeight="18.0" prefWidth="26.0" stylesheets="@../../Styles/font.css" text="Sex" />
+            <TextField id="textField" fx:id="tf_address" layoutX="534.0" layoutY="59.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="417.0" layoutY="63.0" prefHeight="18.0" prefWidth="62.0" stylesheets="@../../Styles/font.css" text="Address" />
+            <TextField id="textField" fx:id="tf_distTBNo" layoutX="131.0" layoutY="100.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="104.0" prefHeight="18.0" prefWidth="91.0" stylesheets="@../../Styles/font.css" text="District TB No." />
+            <ComboBox id="textField" fx:id="cb_refFacility" editable="true" layoutX="534.0" layoutY="100.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="417.0" layoutY="104.0" prefHeight="18.0" prefWidth="91.0" stylesheets="@../../Styles/font.css" text="Referring Facility" />
+            <Separator layoutX="5.0" layoutY="151.0" prefHeight="3.0" prefWidth="772.0" />
+            <ComboBox id="textField" fx:id="cb_typeOfSpecimen" editable="true" layoutX="129.0" layoutY="161.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="13.0" layoutY="165.0" prefHeight="18.0" prefWidth="105.0" stylesheets="@../../Styles/font.css" text="Type of Specimen" />
+            <ComboBox id="textField" fx:id="cb_sampleAppearance" editable="true" layoutX="534.0" layoutY="161.0" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="412.0" layoutY="165.0" prefHeight="18.0" prefWidth="112.0" stylesheets="@../../Styles/font.css" text="Sample Appearance" />
+            <Separator layoutX="6.0" layoutY="200.0" prefHeight="3.0" prefWidth="772.0" />
+            <Label id="ubuntu" layoutX="12.0" layoutY="208.0" prefHeight="18.0" prefWidth="132.0" stylesheets="@../../Styles/font.css" text="Reason for Examination" />
+            <CheckBox fx:id="chk_diagnosis" layoutX="126.0" layoutY="243.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="112.0" text=" TB Diagnosis" />
+            <CheckBox fx:id="chk_resistant" layoutX="321.0" layoutY="243.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="132.0" text=" Drug Resistant" />
+            <CheckBox fx:id="chk_followUp" layoutX="534.0" layoutY="243.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="91.0" text="Follow up" />
+            <Separator layoutX="9.0" layoutY="233.0" prefHeight="3.0" prefWidth="763.0" />
+            <AnchorPane fx:id="ach_indicateMonths" layoutX="532.0" layoutY="269.0" prefHeight="32.0" prefWidth="232.0" visible="false">
+               <children>
+                  <ComboBox id="textField" fx:id="cb_month" editable="true" layoutX="97.0" prefHeight="27.0" prefWidth="132.0" stylesheets="@../../Styles/nodes.css" />
+                  <Label id="ubuntu" layoutY="4.0" prefHeight="18.0" prefWidth="91.0" stylesheets="@../../Styles/font.css" text="Indicate Months" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="9.0" layoutY="306.0" prefHeight="3.0" prefWidth="763.0" />
+            <Button id="ashOdd" fx:id="btn_createRequest" layoutX="534.0" layoutY="315.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="232.0" stylesheets="@../../Styles/buttonStyleSheet.css" text="Create Spokes Request" />
+            <Label fx:id="lb_reason" layoutX="275.0" layoutY="288.0" visible="false" />
+            <Label fx:id="lb_error" layoutX="132.0" layoutY="320.0" prefHeight="18.0" prefWidth="258.0" style="-fx-alignment: center;" textFill="RED" />
+            <Label id="labelOdd" fx:id="lb_reset" layoutX="405.0" layoutY="317.0" onMouseClicked="#resetFields" prefHeight="23.0" prefWidth="112.0" style="-fx-alignment: center;" stylesheets="@../../Styles/nodes.css" text="Reset Fields" />
+            <ComboBox id="textField" fx:id="cb_sex" layoutX="281.0" layoutY="59.0" prefHeight="27.0" prefWidth="81.0" stylesheets="@../../Styles/nodes.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="achPane" layoutX="813.0" layoutY="37.0" opacity="0.83" prefHeight="350.0" prefWidth="390.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <Label id="ubuntu" layoutX="14.0" layoutY="5.0" prefHeight="18.0" prefWidth="91.0" stylesheets="@../../Styles/font.css" text="For Diagnosis" />
+            <Separator layoutX="15.0" layoutY="23.0" prefWidth="200.0" />
+            <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For Follow-up cases (patient on TB treatment) enter the number of months (2, 5, 6 or 8) on treatment." textAlignment="JUSTIFY" wrappingWidth="361.3367919921875" />
+            <Text layoutX="14.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For TB Suspects (New Cases) enter the TB presumed Number, if any, and for follow up cases the District TB Number." textAlignment="JUSTIFY" wrappingWidth="361.3367919921875" />
+            <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="142.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Expert MTB/RIF test results: report as follows:" wrappingWidth="265.3367919921875" />
+            <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="168.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Pos/RS = MTB DETECTED RIF RESISTANT NOT DETECTED" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="189.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Pos/RR = MTB DETECTED RIF RESISTANT DETECTED" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="16.0" layoutY="212.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Pos/RI = MTB DETECTED RIF RESISTANT INDETERMINATE" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="16.0" layoutY="233.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Neg = MTB NOT DETECTED" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="255.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="Err = Error, INV = Invalid" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="18.0" layoutY="277.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="NR = No Result" wrappingWidth="331.73681640625" />
+            <Text fontSmoothingType="LCD" layoutX="18.0" layoutY="296.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="indicate whether High (H), Medium (M), Low (L), or (VL) if MTB is detected" wrappingWidth="331.73681640625" />
+         </children></AnchorPane>
+      <AnchorPane id="achPane" layoutX="8.0" layoutY="397.0" prefHeight="295.0" prefWidth="1194.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <TableView fx:id="tv_requestList" layoutX="7.0" layoutY="37.0" prefHeight="249.0" prefWidth="1180.0">
+               <columns>
+                  <TableColumn fx:id="tc_sampleId" prefWidth="124.7999849319458" style="-fx-alignment: center;" text="Sample ID" />
+                  <TableColumn fx:id="tc_surname" prefWidth="148.0000457763672" text="Surname" />
+                  <TableColumn fx:id="tc_othername" prefWidth="143.20001220703125" text="Othernames" />
+                  <TableColumn fx:id="tc_age" maxWidth="500.0" prefWidth="87.99993896484375" style="-fx-alignment: center;" text="Age" />
+                  <TableColumn fx:id="tc_sex" prefWidth="54.39996337890625" style="-fx-alignment: center;" text="Sex" />
+                  <TableColumn fx:id="tc_address" prefWidth="130.4000244140625" text="Address" />
+                  <TableColumn fx:id="tc_disTBNo" prefWidth="120.7999267578125" text="District TB No." />
+                  <TableColumn fx:id="tc_refFacility" prefWidth="160.0" text="Referring Facility" />
+                  <TableColumn fx:id="tc_specType" maxWidth="500.0" prefWidth="135.20001220703125" text="Specimen Type" />
+                  <TableColumn fx:id="tc_appearance" maxWidth="500.0" prefWidth="135.20001220703125" text="Appearance" />
+                  <TableColumn fx:id="tc_reasonForExam" maxWidth="500.0" prefWidth="135.20001220703125" text="Reason For Examination" />
+                  <TableColumn fx:id="tc_time" maxWidth="500.0" prefWidth="135.20001220703125" text="Time" />
+                  <TableColumn fx:id="tc_date" maxWidth="500.0" prefWidth="135.20001220703125" text="Date" />
+                  <TableColumn fx:id="tc_user" maxWidth="500.0" prefWidth="135.20001220703125" text="User" />
+               </columns>
+            </TableView>
+            <TextField id="searchField" fx:id="tf_search" layoutX="985.0" layoutY="5.0" prefHeight="18.0" prefWidth="200.0" promptText="search" stylesheets="@../../Styles/nodes.css" />
+            <ImageView fitHeight="32.0" fitWidth="26.0" layoutX="1159.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/searchicon.png" />
+               </image>
+            </ImageView>
+            <Label id="labelOdd" fx:id="lb_remove" layoutX="895.0" layoutY="6.0" onMouseClicked="#removeRequest" prefHeight="23.0" prefWidth="62.0" style="-fx-alignment: center;" stylesheets="@../../Styles/nodes.css" text="Remove" />
+            <Separator layoutX="967.0" layoutY="9.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="0.0" />
+            <Label id="labelOdd" fx:id="lb_searchRequest" layoutX="761.0" layoutY="5.0" onMouseClicked="#openSearchRequestDialog" prefHeight="23.0" prefWidth="106.0" style="-fx-alignment: center;" stylesheets="@../../Styles/nodes.css" text="Search Request" />
+            <Separator layoutX="875.0" layoutY="8.0" orientation="VERTICAL" prefHeight="18.0" prefWidth="0.0" />
+         </children></AnchorPane>
+      <Label id="ubuntu" layoutX="21.0" layoutY="55.0" prefHeight="18.0" prefWidth="54.0" stylesheets="@../../Styles/font.css" text="Surname" />
+      <Label fx:id="lb_ID" layoutX="221.0" layoutY="81.0" visible="false" />
+   </children>
+</AnchorPane>

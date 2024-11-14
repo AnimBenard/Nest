@@ -1,0 +1,29 @@
+@font-face {
+    src: url('font/Myriadpro.otf');
+}
+#tveven {
+   .table-view .table-cell:even{
+
+           -fx-text-fill: black;
+           -fx-label-padding: 0;
+           -fx-text-overrun: clip;
+           -fx-font-family: 'Myriadpro';
+}
+.table-view .table-cell:odd{
+    -fx-background-color:#d2ffff ;
+    -fx-text-fill: black;
+    -fx-label-padding: 0;
+    -fx-text-overrun: clip;
+    -fx-font-family: 'Myriadpro';
+    }
+ .table-view: focused .table-row-cell:focused{
+        -fx-background-color:#4c98ff;
+
+  }
+ 
+
+  /*.table-view .table-cell:filled:hover{
+    -fx-background-color: #4c98ff;
+
+  }*/
+}

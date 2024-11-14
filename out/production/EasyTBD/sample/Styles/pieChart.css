@@ -1,0 +1,7 @@
+
+.chart {
+        -fx-padding: 10px;
+
+}
+.data0.chart-pie {-fx-pie-color: blue}
+.data1.chart-pie {-fx-pie-color: purple}

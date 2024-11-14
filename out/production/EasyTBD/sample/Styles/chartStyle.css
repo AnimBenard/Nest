@@ -1,0 +1,40 @@
+@font-face {
+    src: url('fonts/Ubuntu.ttf');
+
+}
+
+.chart {
+        -fx-padding: 10px;
+
+}
+.chart-title {
+	-fx-label-padding: 0;
+    	-fx-text-overrun: clip;
+	-fx-font-size: 1.2em;
+    	-fx-font-family: 'Ubuntu';
+}
+.axis-label {
+	-fx-font-family: 'Ubuntu';
+}
+.chart.content {
+        -fx-padding: 10px;
+	
+}
+.chart-series-line {
+        -fx-stroke-width:  1px;
+        -fx-effect: null;
+}
+
+       .default-color0.chart-series-line { -fx-stroke: #660079 }
+       .default-color1.chart-series-line { -fx-stroke: #0b6100 }
+       .default-color2.chart-series-line { -fx-stroke: #1eff00 }
+       .default-color3.chart-series-line { -fx-stroke: #d800ff }
+
+
+       .default-color0.chart-line-symbol {-fx-background-color: #660079, white; }
+       .default-color1.chart-line-symbol {-fx-background-color: #0b6100, white; }
+       .default-color2.chart-line-symbol {-fx-background-color: #1eff00, white; }
+       .default-color3.chart-line-symbol {-fx-background-color: #d800ff, white; }
+
+
+

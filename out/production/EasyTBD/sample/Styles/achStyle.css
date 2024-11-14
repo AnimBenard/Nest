@@ -1,0 +1,39 @@
+@font-face {
+    src: url('Fonts/Myriadpro.otf');
+
+}
+#achPane:hover{
+      -fx-background-color:
+      	              linear-gradient(to right,  #002746 40%, #005293 90%);
+
+      -fx-text-fill: #ffffff;
+}
+
+#achPaneTopBar{
+      -fx-background-color:
+	              linear-gradient(to right,  #002746 0%, #00c0ff 90%);
+
+}
+#achPaneTopBarOdd{
+      -fx-background-color:
+	              linear-gradient(to right,  #fa05cd 0%, #a90af5 90%);
+
+}
+#lbHover:hover{
+      -fx-text-fill: #e5ec47;
+}
+#lbBorder{
+    -fx-label-padding: 0;
+        -fx-text-overrun: clip;
+        -fx-font-family: 'Ubuntu';
+}
+#lbBorder:hover{
+      -fx-border-color: #00a2a2;
+}
+#lbTriage{
+   -fx-font-family: 'Ubuntu';
+   -fx-background-color: #fff;
+}
+#lbTriage:hover{
+    -fx-background-color:  #eefecf;
+}

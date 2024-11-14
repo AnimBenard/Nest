@@ -1,0 +1,9 @@
+@font-face {
+    src: url('font/MyriadproSemiBold.otf');
+}
+
+#ubuntu{
+    -fx-label-padding: 0;
+    -fx-text-overrun: clip;
+    -fx-font-family: 'Myriadpro';
+}

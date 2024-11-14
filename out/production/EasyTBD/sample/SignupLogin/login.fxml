@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupLogin.LoginSignUpController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="824.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginBackground.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="achPane" fx:id="ach_signIn" layoutX="27.0" layoutY="38.0" prefHeight="436.0" prefWidth="349.0" stylesheets="@../Styles/nodes.css">
+         <children>
+            <Label id="ubuntu" layoutX="176.0" layoutY="14.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="Sign In">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font>
+            </Label>
+            <TextField id="textField" fx:id="tf_login_username" layoutX="80.0" layoutY="67.0" prefHeight="27.0" prefWidth="246.0" stylesheets="@../Styles/nodes.css" />
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="39.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="37.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <PasswordField id="textField" fx:id="tf_login_password" layoutX="80.0" layoutY="116.0" prefHeight="25.0" prefWidth="246.0" stylesheets="@../Styles/nodes.css" />
+            <Button id="ash" fx:id="btn_signin" layoutX="80.0" layoutY="172.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="246.0" stylesheets="@../Styles/buttonStyleSheet.css" text="Sign in" />
+            <ProgressIndicator fx:id="pi_spin" layoutX="190.0" layoutY="149.0" prefHeight="17.0" prefWidth="27.0" visible="false" />
+            <Label id="ubuntu" fx:id="lb_loginError" layoutX="80.0" layoutY="229.0" prefHeight="17.0" prefWidth="246.0" style="-fx-alignment: center;" stylesheets="@../Styles/font.css" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <Label id="label" fx:id="lb_signUp" layoutX="533.0" layoutY="431.0" onMouseClicked="#handleCreateAccountLabelClick" prefHeight="27.0" prefWidth="223.0" style="-fx-alignment: center;" stylesheets="@../Styles/nodes.css" text="Don,t have an account. Create one" />
+      <AnchorPane id="achPane" fx:id="ach_createAccount" layoutX="27.0" layoutY="38.0" prefHeight="436.0" prefWidth="349.0" stylesheets="@../Styles/nodes.css" visible="false">
+         <children>
+            <Label id="ubuntu" layoutX="176.0" layoutY="14.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="Sign Up">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font>
+            </Label>
+            <TextField id="textField" fx:id="tf_surname" layoutX="103.0" layoutY="67.0" prefHeight="27.0" prefWidth="223.0" stylesheets="@../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="68.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="Surname" />
+            <TextField id="textField" fx:id="tf_othernames" layoutX="103.0" layoutY="106.0" prefHeight="27.0" prefWidth="223.0" stylesheets="@../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="107.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="Othernames" />
+            <TextField id="textField" fx:id="tf_user_id" editable="false" layoutX="103.0" layoutY="144.0" opacity="0.85" prefHeight="27.0" prefWidth="223.0" stylesheets="@../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="145.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="User Id" />
+            <PasswordField id="textField" fx:id="pf_sign_password" layoutX="103.0" layoutY="183.0" prefHeight="25.0" prefWidth="223.0" stylesheets="@../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="16.0" layoutY="181.0" prefHeight="27.0" prefWidth="66.0" stylesheets="@../Styles/font.css" text="Password" />
+            <PasswordField id="textField" fx:id="pf_sign_password_rep" layoutX="103.0" layoutY="222.0" prefHeight="25.0" prefWidth="223.0" promptText="repeat password" stylesheets="@../Styles/nodes.css" />
+            <Button id="ash" fx:id="btn_sign_up" layoutX="103.0" layoutY="277.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="223.0" stylesheets="@../Styles/buttonStyleSheet.css" text="Sign up" />
+            <Label fx:id="lb_createAccError" layoutX="103.0" layoutY="372.0" prefHeight="17.0" prefWidth="223.0" style="-fx-alignment: center;" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <Label id="label" fx:id="lb_login" layoutX="533.0" layoutY="431.0" onMouseClicked="#handleSignInLabelClick" prefHeight="27.0" prefWidth="223.0" style="-fx-alignment: center;" stylesheets="@../Styles/nodes.css" text="Already have an account. Login now." visible="false" />
+   </children>
+</AnchorPane>

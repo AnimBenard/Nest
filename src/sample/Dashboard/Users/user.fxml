@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard.Users.UsersController">
+   <children>
+      <AnchorPane id="achPaneTopBar" prefHeight="26.0" prefWidth="1209.0" stylesheets="@../../Styles/achStyle.css">
+         <children>
+            <Label id="ubuntu" layoutX="16.0" layoutY="4.0" stylesheets="@../../Styles/font.css" text="Users" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="achPane" layoutX="14.0" layoutY="35.0" prefHeight="290.0" prefWidth="602.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <Label id="ubuntu" layoutX="8.0" layoutY="6.0" prefHeight="18.0" prefWidth="75.0" stylesheets="@../../Styles/font.css" text="User Info" />
+            <Separator layoutX="8.0" layoutY="23.0" prefWidth="200.0" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="35.0" prefHeight="18.0" prefWidth="54.0" stylesheets="@../../Styles/font.css" text="Surname" />
+            <TextField id="textField" fx:id="tf_surname" editable="false" layoutX="85.0" layoutY="32.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="307.0" layoutY="36.0" prefHeight="18.0" prefWidth="69.0" stylesheets="@../../Styles/font.css" text="Othername" />
+            <TextField id="textField" fx:id="tf_othername" editable="false" layoutX="385.0" layoutY="30.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="77.0" prefHeight="18.0" prefWidth="54.0" stylesheets="@../../Styles/font.css" text="Username" />
+            <TextField id="textField" fx:id="tf_username" editable="false" layoutX="85.0" layoutY="74.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="306.0" layoutY="78.0" prefHeight="18.0" prefWidth="69.0" stylesheets="@../../Styles/font.css" text="Verification" />
+            <TextField id="textField" fx:id="tf_verification" editable="false" layoutX="385.0" layoutY="72.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="14.0" layoutY="122.0" prefHeight="18.0" prefWidth="54.0" stylesheets="@../../Styles/font.css" text="Time" />
+            <TextField id="textField" fx:id="tf_time" editable="false" layoutX="85.0" layoutY="119.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label id="ubuntu" layoutX="305.0" layoutY="122.0" prefHeight="18.0" prefWidth="46.0" stylesheets="@../../Styles/font.css" text="Date" />
+            <TextField id="textField" fx:id="tf_date" editable="false" layoutX="385.0" layoutY="117.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Button id="ash" fx:id="btn_remove" layoutX="84.0" layoutY="221.0" mnemonicParsing="false" onAction="#removeFromUserRegister" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/buttonStyleSheet.css" text="Remove" />
+            <Button id="ash" fx:id="btn_validate" layoutX="385.0" layoutY="221.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/buttonStyleSheet.css" text="Validate" />
+            <Label id="ubuntu" layoutX="13.0" layoutY="170.0" prefHeight="18.0" prefWidth="63.0" stylesheets="@../../Styles/font.css" text="Access" />
+            <Label id="ubuntu" layoutX="307.0" layoutY="168.0" prefHeight="18.0" prefWidth="46.0" stylesheets="@../../Styles/font.css" text="Admin" />
+            <TextField id="textField" fx:id="tf_user" editable="false" layoutX="385.0" layoutY="166.0" prefHeight="27.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <ComboBox id="textField" fx:id="cb_grade" editable="true" layoutX="85.0" layoutY="167.0" prefHeight="26.0" prefWidth="200.0" stylesheets="@../../Styles/nodes.css" />
+            <Label fx:id="lb_name" layoutX="258.0" layoutY="7.0" visible="false" />
+            <Label fx:id="lb_userID" layoutX="424.0" layoutY="6.0" visible="false" />
+            <Label fx:id="lb_ID" layoutX="507.0" layoutY="7.0" visible="false" />
+         </children></AnchorPane>
+      <AnchorPane id="achPane" layoutX="632.0" layoutY="35.0" prefHeight="290.0" prefWidth="570.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <TableView fx:id="tv_awaitingValidation" layoutX="10.0" layoutY="29.0" prefHeight="254.0" prefWidth="554.0">
+              <columns>
+                <TableColumn fx:id="tc_av_usrId" prefWidth="124.0" style="-fx-alignment: center;" text="User ID" />
+                <TableColumn fx:id="tc_av_surname" prefWidth="182.39996337890625" text="Surname" />
+                  <TableColumn fx:id="tc_av_othername" prefWidth="129.60003662109375" text="Othernames" />
+                  <TableColumn fx:id="tc_av_verification" prefWidth="129.60003662109375" style="-fx-alignment: center;" text="Verification" />
+                  <TableColumn fx:id="tc_av_time" prefWidth="129.60003662109375" text="Time" />
+                  <TableColumn fx:id="tc_av_date" prefWidth="129.60003662109375" text="Date" />
+              </columns>
+            </TableView>
+            <Label id="ubuntu" layoutX="12.0" layoutY="4.0" prefHeight="18.0" prefWidth="118.0" stylesheets="@../../Styles/font.css" text="Pending Verification" />
+            <Separator layoutX="13.0" layoutY="21.0" prefWidth="200.0" />
+         </children></AnchorPane>
+      <AnchorPane id="achPane" layoutX="14.0" layoutY="340.0" prefHeight="354.0" prefWidth="1188.0" stylesheets="@../../Styles/nodes.css">
+         <children>
+            <TableView fx:id="tv_verifiedUsers" layoutX="7.0" layoutY="10.0" prefHeight="335.0" prefWidth="1170.0">
+               <columns>
+                  <TableColumn fx:id="tc_vu_userId" prefWidth="123.19997787475586" style="-fx-alignment: center;" text="User ID" />
+                  <TableColumn fx:id="tc_vu_surname" prefWidth="149.59999084472656" text="Surname" />
+                  <TableColumn fx:id="tc_vu_othername" prefWidth="155.20001220703125" text="Othernames" />
+                  <TableColumn fx:id="tc_vu_userRole" maxWidth="500.0" prefWidth="118.4000244140625" style="-fx-alignment: center;" text="User Role" />
+                  <TableColumn fx:id="tc_vu_verification" prefWidth="123.20001220703125" text="Verification" />
+                  <TableColumn fx:id="tc_vu_signupTime" prefWidth="93.60003662109375" text="Sign upTime" />
+                  <TableColumn fx:id="tc_vu_signupDate" prefWidth="131.2000732421875" text="Sign up Date" />
+                  <TableColumn fx:id="tc_vu_verificationDate" prefWidth="105.59991455078125" text="Verification Date" />
+                  <TableColumn fx:id="tc_vu_verificationUser" maxWidth="500.0" prefWidth="193.60003662109375" text="Admin" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
