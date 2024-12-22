@@ -4,7 +4,7 @@
 
 ---
 This is a robust, user-friendly desktop application designed to transform how hospitals manage patient care and administrative workflows. 
-By integrating all essential hospital functions into one cohesive platform, HIMS ensures seamless information sharing and operational efficiency, 
+By integrating all essential hospital functions into one cohesive platform, NEST ensures seamless information sharing and operational efficiency, 
 ultimately enhancing the quality of healthcare delivery.  
 
 ### **Core Features and Functionalities**  
@@ -67,3 +67,4 @@ This system is built with a deep understanding of the operational challenges fac
 Whether you are managing a single-specialty clinic or a multi-specialty hospital, the HIMS desktop application offers the perfect combination of innovation, reliability, and ease of use to elevate your institution's efficiency and reputation.  
 
 ---
+For more info and database design and installation processes, email me at: animbenard@gmail.com
