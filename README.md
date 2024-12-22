@@ -1,10 +1,11 @@
-NEST Hospital Information Management System 
+**NEST Hospital Information Management System** 
 
+
+
+---
 This is a robust, user-friendly desktop application designed to transform how hospitals manage patient care and administrative workflows. 
 By integrating all essential hospital functions into one cohesive platform, HIMS ensures seamless information sharing and operational efficiency, 
 ultimately enhancing the quality of healthcare delivery.  
-
----
 
 ### **Core Features and Functionalities**  
 
