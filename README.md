@@ -61,10 +61,11 @@ Efficiently manages all hospital wards and units, including:
 
 ---
 
-### **Why Choose HIMS?**  
+### **Why Choose NEST?**  
 This system is built with a deep understanding of the operational challenges faced by hospitals. By providing an all-in-one solution for medical records, departmental coordination, and administrative tasks, HIMS empowers healthcare providers to focus on what truly matters: delivering exceptional patient care.  
 
 Whether you are managing a single-specialty clinic or a multi-specialty hospital, the HIMS desktop application offers the perfect combination of innovation, reliability, and ease of use to elevate your institution's efficiency and reputation.  
 
 ---
+Video preview of Nest app: https://drive.google.com/file/d/1XasGD1v5ti98hV1PMj8kCpQwMmA6r5M9/view?usp=drive_link
 For more info and database design and installation processes, email me at: animbenard@gmail.com
